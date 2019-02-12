@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  image_url: MyString
+  age: 1
+  breed: one
+  owner: one
+
+two:
+  name: MyString
+  image_url: MyString
+  age: 1
+  breed: two
+  owner: two
