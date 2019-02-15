@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'breeds/index'
+  get 'breeds/show'
   get 'owners/index'
   get 'owners/show'
   # get 'owner/index'

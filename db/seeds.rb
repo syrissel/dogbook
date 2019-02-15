@@ -26,7 +26,7 @@ breed_response = Net::HTTP.get(breed_uri)
 
 breeds = JSON.parse(breed_response)
 
-4.times do
+6.times do
   Owner.create(name: Faker::Name.name)
 end
 
@@ -36,7 +36,7 @@ breeds['message'].each do |key|
 
   
 
-  10.times do
+  3.times do
     owner = Owner.find(Owner.pluck(:id).sample)
 
     dog_url = "https://dog.ceo/api/breed/#{key[0]}/images/random"
