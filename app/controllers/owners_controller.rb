@@ -1,4 +1,4 @@
-class OwnerController < ApplicationController
+class OwnersController < ApplicationController
   def index
     @owners = Owner.order(:name)
   end
