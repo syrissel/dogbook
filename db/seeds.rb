@@ -26,7 +26,7 @@ breed_response = Net::HTTP.get(breed_uri)
 
 breeds = JSON.parse(breed_response)
 
-15.times do
+4.times do
   Owner.create(name: Faker::Name.name)
 end
 
@@ -50,4 +50,4 @@ breeds['message'].each do |key|
 
 end
 
-Dog.create(name: 'doggo')
+# Dog.create(name: 'doggo')
